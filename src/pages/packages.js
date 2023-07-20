@@ -13,7 +13,7 @@ const Packages = () => {
         <Button className="packageButton"
         variant="contained" 
         color="error" 
-        style= {{marginLeft:"250px",marginTop:"-50px",width:"120px",height:"45px"}}
+        style= {{marginLeft:"250px",marginTop:"-80px",width:"120px",height:"45px"}}
         >
             <Link to='/contact'>Book Now! </Link></Button>
         <ul>

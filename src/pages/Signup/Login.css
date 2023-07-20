@@ -1,16 +1,11 @@
-/* .boxForm{
-    margin:20px !important;
-} */
 
-/* #formTop{
-    margin-top: 40px !important;
-} */
 
 .formAlign {
     display: flex !important; 
     width: 350px !important;
     background-color: white;
     justify-content: center !important;
+    
 }
 
 .fontSize {
