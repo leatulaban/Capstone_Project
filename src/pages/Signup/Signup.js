@@ -85,26 +85,7 @@ export default function Signup() {
           [event.target.name]: event.target.value}));
     };
        
-        // else {setHasError(false);
-        //     setSignUp({
-        //     Name: "",
-        //     email: "",
-        //     password1: "",
-        //     password2: ""});
-        //     toast.success('Your account has been created. Please proceed to login.', {
-        //         position: "top-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined,
-        //         theme: "dark",
-        //         });
-        // }
-    
-
-        // console.log('Submit', signUp);
+       
     
 
   return (
@@ -149,20 +130,7 @@ export default function Signup() {
         />
         </Grid>
       </Grid>
-      {/* <Grid container spacing={0} className = 'formAlign'>
-        <Grid item xs={12} sm={4} className='fontSize'> Re-enter Password:
-        <TextField fullWidth
-          required
-          id="outlined-password-input"
-          label="Re-enter password"
-          type="password"
-          autoComplete="current-password"
-          onChange={(event) => handleOnChange(event)}
-          name= "password2"
-          value={signUp.password2}
-        />
-        </Grid>
-      </Grid> */}
+     
 
       <Grid container spacing={0} className = 'formAlign'>
         <Grid item xs={12} sm={4} className='fontSize'>
