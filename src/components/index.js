@@ -1,8 +1,16 @@
 import React from "react";
 import { Nav, NavLink, NavMenu }
 	from "./NavbarElements";
+import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+	const navigate = useNavigate();
+	const handleLogout =() => {
+		localStorage.removeItem('login_token');
+		navigate('/login');
+	}
 	return (
 		<><div class='home-menu'>
         <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
@@ -21,13 +29,22 @@ const Navbar = () => {
 					</NavLink>
 					<NavLink to="/contact" activeStyle>
 						Contact Us
-					</NavLink>
+					</NavLink>  
 					<NavLink to="/packages" activeStyle>
 						Packages
 					</NavLink>
 					<NavLink to="/teachers" activeStyle>
 						Teachers
 					</NavLink>
+					<NavLink to="/login" activeStyle>
+						Login
+					</NavLink>
+					<Button  
+					 activeStyle
+					 onClick={handleLogout}
+					 >
+						Logout				
+					</Button>
 				</NavMenu>
 			</Nav>
             </div>

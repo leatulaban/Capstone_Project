@@ -1,4 +1,6 @@
+import { Button } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Packages = () => {
 	return (
@@ -8,6 +10,12 @@ const Packages = () => {
     </div>
     <div id="packagemenu">
         <h2>Rates</h2>
+        <Button className="packageButton"
+        variant="contained" 
+        color="error" 
+        style= {{marginLeft:"250px",marginTop:"-50px",width:"120px",height:"45px"}}
+        >
+            <Link to='/contact'>Book Now! </Link></Button>
         <ul>
             <li>
                 <span class="Rate">Band rehearsal</span>
