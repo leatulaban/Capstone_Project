@@ -56,8 +56,13 @@ export default function Signup() {
                   theme: "dark",
                   });
           } catch (error) {
+            if(error.response.status === 500){
+              setError('Name & Email already taken!');
+              
+            }else{
             let errorMessage = error.response.data.error;
             setError(errorMessage);
+            }
           }
            setSubmitLoading(false);
         }
